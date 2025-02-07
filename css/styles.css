@@ -32,3 +32,58 @@ body {
     color: #e5e7eb;
 }
 
+.hero {
+    display: flex;
+    background-color: #1f2937;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    padding-left: 190px;
+    padding-right: 190px;
+    justify-content: space-evenly;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+
+}
+.hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 60px;
+}
+.hero-main-text {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+}
+.hero-secondary-text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.btn {
+    background-color: #3882F6;
+    border-radius: 7px;
+    border: solid 1px #3882F6;
+    padding: 7px 15px;
+
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    width: 60px;
+
+    text-decoration: none;
+}
+
+.hero-image {
+    width: 480px;
+    height: 248px;
+    
+}
+
