@@ -3,6 +3,7 @@ body {
     margin: 0;
 }
 
+/* NAVBARS */
 .navbar {
     display: flex;
     flex-direction: row;
@@ -31,7 +32,9 @@ body {
     font-size: 18px;
     color: #e5e7eb;
 }
+/* NAVBARS */
 
+/* HEROS */
 .hero {
     display: flex;
     background-color: #1f2937;
@@ -56,6 +59,7 @@ body {
     align-items: center;
 
     padding-left: 60px;
+    
 }
 .hero-main-text {
     font-size: 48px;
@@ -84,6 +88,56 @@ body {
 .hero-image {
     width: 480px;
     height: 248px;
+
+}
+/* HEROS */
+
+.random {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 10px;
+}
+
+.random-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.random-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
+    list-style-type: none;
+    
+    width: 142px;
+    padding: 0 15px;
+}
+
+.random > .random-header {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.random-box > li > img {
+    width: 142px;
+    height: 142px;
+
+    border: 5px solid #3882F6;
+    border-radius: 15px;
+}
+
+.random-box > .random-text {
+    text-align: center;
+    color: #5f6874;
+    font-weight: 400;
 }
 
