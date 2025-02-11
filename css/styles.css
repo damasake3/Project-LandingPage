@@ -1,3 +1,23 @@
+:root {
+    /* Colors */
+    --whitish: #f9faf8;
+    --whitish-still: #e5e7eb;
+    --darkish: #1f2937;
+    --greyish: #5f6874;
+    --primary: #3882F6;
+
+    /* Font-sizes */
+    --navlogo-size: 24px;
+    --navlink-size: 18px;
+
+    --bighero-size: 48px;
+    --smallhero-size:18px;
+
+    --bigrandom-size: 36px;
+
+    --bigquote-size: 36px;
+}
+
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
@@ -10,11 +30,11 @@ body {
     justify-content: space-around;
     align-items: center;
 
-    background-color: #1f2937;
+    background-color: var(--darkish);
 }
 .navlogo {
-    font-size: 24px;
-    color: #f9faf8;
+    font-size: var(--navlogo-size);
+    color: var(--whitish);
 }
 
 .navlinks {
@@ -29,29 +49,27 @@ body {
 
 .navlinks > li > a {
     text-decoration: none;
-    font-size: 18px;
-    color: #e5e7eb;
+    font-size: var(--navlink-size);
+    color: var(--whitish-still);
 }
 /* NAVBARS */
 
 /* HEROS */
 .hero {
     display: flex;
-    background-color: #1f2937;
+    justify-content: space-evenly;
+    background-color: var(--darkish);
     padding-top: 160px;
     padding-bottom: 160px;
     padding-left: 190px;
     padding-right: 190px;
-    justify-content: space-evenly;
 }
-
 .hero-left {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 10px;
     width: 100%;
-
 }
 .hero-right {
     display: flex;
@@ -62,19 +80,19 @@ body {
     
 }
 .hero-main-text {
-    font-size: 48px;
-    color: #f9faf8;
+    font-size: var(--bighero-size);
+    color: var(--whitish);
     font-weight: 900;
 }
 .hero-secondary-text {
-    font-size: 18px;
-    color: #E5E7EB;
+    font-size: var(--smallhero-size);
+    color: var(--whitish-still);
 }
 
 .btn {
-    background-color: #3882F6;
+    background-color: var(--primary);
     border-radius: 7px;
-    border: solid 1px #3882F6;
+    border: solid 1px var(--primary);
     padding: 7px 40px;
 
     color: white;
@@ -83,12 +101,12 @@ body {
     
     max-width: 80px;
     text-decoration: none;
+
 }
 
 .hero-image {
     width: 480px;
     height: 248px;
-
 }
 /* HEROS */
 
@@ -101,7 +119,6 @@ body {
     padding: 20px 0;
     gap: 10px;
 }
-
 .random-boxes {
     display: flex;
     justify-content: center;
@@ -109,7 +126,6 @@ body {
 
     gap: 20px;
 }
-
 .random-box {
     display: flex;
     flex-direction: column;
@@ -121,31 +137,28 @@ body {
     width: 142px;
     padding: 0 15px;
 }
-
 .random > .random-header {
-    color: #1f2937;
-    font-size: 36px;
+    color: var(--darkish);
+    font-size: var(--bigrandom-size);
     font-weight: 900;
 }
-
 .random-box > li > img {
     width: 142px;
     height: 142px;
 
-    border: 5px solid #3882F6;
+    border: 5px solid var(--primary);
     border-radius: 15px;
 }
-
 .random-box > .random-text {
     text-align: center;
-    color: #5f6874;
+    color: var(--greyish);
     font-weight: 400;
 }
 /* RANDOMS */
 
 /* QUOTES */
 .quote {
-    background-color: #e5e7eb;
+    background-color: var(--whitish-still);
     padding: 60px 0;
 
     display: flex;
@@ -154,16 +167,14 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .quote > blockquote {
-    font-size: 36px;
+    font-size: var(--bigquote-size);
     font-style: italic;
     font-weight: lighter;
 
     width: 56%;
     margin-bottom: 0;
 }
-
 .quote > .author {
     display: flex;
     flex-direction: row-reverse;
@@ -184,13 +195,12 @@ body {
     display: flex;
     gap: 90px;
 
-    background-color: #3882F6;
+    background-color: var(--primary);
     padding: 40px 90px;
 
     border-radius: 10px;
     
 }
-
 .blue-box > .btn {
     color: white;
     border: 1px solid white;
@@ -202,12 +212,12 @@ body {
 }
 .action-desc > h3, p {
     margin: 0;
-    color: gainsboro;
+    color: var(--whitish-still);
 }
 
 .action-desc > p {
     font-weight: lighter;
-    color: gainsboro;
+    color: var(--whitish-still);
 }
 /*CALL-ACTION*/
 
@@ -217,8 +227,8 @@ body {
     justify-content: center;
     align-items: center;
 
-    background-color: #1f2937;
-    color: whitesmoke;
+    background-color: var(--darkish);
+    color: var(--whitish);
     font-weight: lighter;
     padding: 30px;
 }
