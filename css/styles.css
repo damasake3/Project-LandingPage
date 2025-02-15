@@ -34,7 +34,13 @@ body {
 }
 .navlogo {
     font-size: var(--navlogo-size);
-    color: var(--whitish);
+    color: goldenrod;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.nav-image {
+    height: 148px;
 }
 
 .navlinks {
@@ -59,10 +65,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     background-color: var(--darkish);
-    padding-top: 160px;
-    padding-bottom: 160px;
-    padding-left: 190px;
-    padding-right: 190px;
+    padding: 160px 190px;
 }
 .hero-left {
     display: flex;
@@ -102,6 +105,10 @@ body {
     max-width: 80px;
     text-decoration: none;
 
+}
+
+.hero-left > .btn {
+    max-width: 200px;
 }
 
 .hero-image {
